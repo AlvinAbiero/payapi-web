@@ -1,8 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --police-blue: #36536b;
+  --irresistible: #ba4270;
+  --light-irresistible: #da6d97;
+  --dark-gunmetal: #1b262f;
+  --ghost-white: #fbfcfe;
+  --slate-gray: #6c8294;
+  --flash-white: #edf3f8;
 }
 
 html {
@@ -30,5 +35,154 @@ html {
     left: 25%;
     width: 100%;
     height: 100%;
+  }
+  /* === Background Colors === */
+  .bg-police-blue {
+    background-color: var(--police-blue);
+  }
+  .hover\:bg-police-blue:hover {
+    background-color: var(--police-blue);
+  }
+
+  .bg-irresistible {
+    background-color: var(--irresistible);
+  }
+  .hover\:bg-irresistible:hover {
+    background-color: var(--irresistible);
+  }
+
+  .bg-light-irresistible {
+    background-color: var(--light-irresistible);
+  }
+  .hover\:bg-light-irresistible:hover {
+    background-color: var(--light-irresistible);
+  }
+
+  .bg-dark-gunmetal {
+    background-color: var(--dark-gunmetal);
+  }
+  .hover\:bg-dark-gunmetal:hover {
+    background-color: var(--dark-gunmetal);
+  }
+
+  .bg-ghost-white {
+    background-color: var(--ghost-white);
+  }
+  .hover\:bg-ghost-white:hover {
+    background-color: var(--ghost-white);
+  }
+
+  .bg-slate-gray {
+    background-color: var(--slate-gray);
+  }
+  .hover\:bg-slate-gray:hover {
+    background-color: var(--slate-gray);
+  }
+
+  .bg-flash-white {
+    background-color: var(--flash-white);
+  }
+  .hover\:bg-flash-white:hover {
+    background-color: var(--flash-white);
+  }
+
+  /* === Text Colors === */
+  .text-police-blue {
+    color: var(--police-blue);
+  }
+  .hover\:text-police-blue:hover {
+    color: var(--police-blue);
+  }
+
+  .text-irresistible {
+    color: var(--irresistible);
+  }
+  .hover\:text-irresistible:hover {
+    color: var(--irresistible);
+  }
+
+  .text-light-irresistible {
+    color: var(--light-irresistible);
+  }
+  .hover\:text-light-irresistible:hover {
+    color: var(--light-irresistible);
+  }
+
+  .text-dark-gunmetal {
+    color: var(--dark-gunmetal);
+  }
+  .hover\:text-dark-gunmetal:hover {
+    color: var(--dark-gunmetal);
+  }
+
+  .text-ghost-white {
+    color: var(--ghost-white);
+  }
+  .hover\:text-ghost-white:hover {
+    color: var(--ghost-white);
+  }
+
+  .text-slate-gray {
+    color: var(--slate-gray);
+  }
+  .hover\:text-slate-gray:hover {
+    color: var(--slate-gray);
+  }
+
+  .text-flash-white {
+    color: var(--flash-white);
+  }
+  .hover\:text-flash-white:hover {
+    color: var(--flash-white);
+  }
+
+  /* === Border Colors === */
+  .border-police-blue {
+    border-color: var(--police-blue);
+  }
+  .hover\:border-police-blue:hover {
+    border-color: var(--police-blue);
+  }
+
+  .border-irresistible {
+    border-color: var(--irresistible);
+  }
+  .hover\:border-irresistible:hover {
+    border-color: var(--irresistible);
+  }
+
+  .border-light-irresistible {
+    border-color: var(--light-irresistible);
+  }
+  .hover\:border-light-irresistible:hover {
+    border-color: var(--light-irresistible);
+  }
+
+  .border-dark-gunmetal {
+    border-color: var(--dark-gunmetal);
+  }
+  .hover\:border-dark-gunmetal:hover {
+    border-color: var(--dark-gunmetal);
+  }
+
+  .border-ghost-white {
+    border-color: var(--ghost-white);
+  }
+  .hover\:border-ghost-white:hover {
+    border-color: var(--ghost-white);
+  }
+
+  .border-slate-gray {
+    border-color: var(--slate-gray);
+  }
+  .hover\:border-slate-gray:hover {
+    border-color: var(--slate-gray);
+  }
+
+  .border-flash-white {
+    border-color: var(--flash-white);
+  }
+  .hover\:border-flash-white:hover {
+    border-color: var(--flash-white);
   }
 }

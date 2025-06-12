@@ -17,7 +17,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <nav className="w-full z-50">
-      <div className="max-w-[120rem] mx-auto w-full space-x-24 md:p-16 p-12 flex items-center justify-between relative">
+      <div className="max-w-[120rem] mx-auto w-full space-x-24 md:p-16 p-12 flex items-center justify-between relative font-sans">
         <Link href="/">
           <Image
             src={logo}
@@ -35,7 +35,7 @@ const Navbar = () => {
               <Link
                 key={link.name}
                 href={link.href}
-                className="text-[1.5rem] leading-normal text-blue-600 font-[700] transition-all duration hover:text-blue-800"
+                className="text-[1.5rem] leading-normal text-slate-gray font-[700] transition-all duration hover:text-police-blue"
               >
                 {link.name}
               </Link>
@@ -44,7 +44,7 @@ const Navbar = () => {
           <div>
             <Link
               href="#"
-              className="py-6 px-11 bg-pink-500 rounded-[2.4rem] block text-[1.5rem] leading-normal text-white font-[700] hover:bg-pink-600 transition-all duration-300"
+              className="py-4 px-8 bg-irresistible rounded-[2.4rem] block text-[1.5rem] leading-normal text-ghost-white font-[700] hover:bg-light-irresistible transition-all duration-300"
             >
               Schedule a Demo
             </Link>
@@ -64,30 +64,30 @@ const Navbar = () => {
       </div>
       {/* Mobile Menu Panel */}
       <div
-        className={`fixed top-0 right-0 h-full w-3/4 bg-blue-800 shadow-lg transform px-8 transition-transform duration-400 text-xl z-50 ${
+        className={`fixed top-0 right-0 h-full w-3/4 bg-dark-gunmetal  shadow-lg transform px-8 transition-transform duration-400 text-xl z-50 ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="flex items-center text justify-end px-12 py-12">
+        <div className="flex items-center text justify-end p-8">
           <button onClick={() => setIsOpen(false)}>
             <Image
               src={close}
               alt="Close Icon"
-              width={24}
-              height={24}
+              width={22}
+              height={22}
               className="cursor-pointer"
             />
           </button>
         </div>
-        <div className="flex flex-col space-y-12 md:text-3xl text-2xl px-8 md:px-24 py-12 border-t border-gray-700 items-center">
+        <div className="flex flex-col space-y-12 md:text-3xl text-2xl px-8 md:px-24 py-12 border-t border-slate-gray items-center font-[500]">
           {[...navLinks, { name: "Schedule a Demo", href: "#" }].map((link) => (
             <Link
               key={link.name}
               href={link.href}
               className={`${
                 link.name === "Schedule a Demo"
-                  ? "bg-transparent hover:bg-pink-600 text-white hover:text-black px-4 py-3.5 border-white border-2 rounded-4xl text-center w-5/8"
-                  : "text-white hover:text-black"
+                  ? "bg-transparent bg-irresistible hover:bg-light-irresistible text-ghost-white px-4 py-3.5  rounded-4xl text-center w-5/8 text-[1.35rem]"
+                  : "text-slate-gray hover:text-ghost-white"
               } transition cursor-pointer`}
               onClick={() => setIsOpen(false)}
             >
