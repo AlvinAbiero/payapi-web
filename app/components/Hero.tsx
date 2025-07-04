@@ -1,39 +1,33 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
+
+import phoneMockup from '@/public/home/desktop/illustration-phone-mockup.svg'
+
 const Hero = () => {
   return (
-    <div>
-        <section className='grid grid-cols-2 gap-12 items-center max-w-144 mx-auto px-24 lg:grid-cols-1 lg:pb-40 lg:gap-0 md:px-16 sm:px-10'>
-        <div className="flex flex-col gap-6 lg:items-center">
-           <h1  className="text-police-blue font-serif text-7.2rem leading-7.2rem -tracking-0.0554rem pb-3 2xl:text-6.2rem xl:text-center lg:text-4.8rem lg:leading-5.6rem lg:-tracking-0.0369rem sm:text-3.2rem md:leading-3.6rem md:-tracking-0.0246rem">
-            Start building with our APIs for absolutely free.
-           </h1>
-           <div
-                class="flex items-center bg-white w-[44rem] rounded-[2.4rem] overflow-hidden shadow-lg sm:flex-col sm:bg-transparent sm:shadow-none sm:gap-7 sm:w-full"
-              >
-                <input
-                  type="email"
-                  placeholder="Enter email address"
-                  class="py-6 px-11 w-59% border-none outline-none text-[1.5rem] placeholder:text-[1.5rem] sm:w-full sma:rounded-[2.4rem] sm:shadow-lg"
-                />
-                <a
-                  href="#"
-                  class="py-6 px-11 bg-irresistible rounded-[2.4rem] block text-[1.5rem] text-ghost-white leading-norm font-700 hover:bg-light-irresistible transition-all duration-300 sm:w-full sm:text-center"
-                  >Schedule a Demo</a
-                >
-              </div>
-               <p className="text-police-blue text-[1.5rem] leading-normal">
+    <div className='flex flex-col-reverse px-8 pb-16 items-center lg:grid lg:grid-cols-2 min-h-screen'>
+       {/* CTA */}
+       <div className='text-center lg:text-left px-8'>
+        <h1 className='text-police-blue text-center lg:text-left font-bold font-serif text-[2.85rem] leading-[3.5rem] md:text-[3.75rem] md:leading-[5rem]  lg:text-[4.75rem] lg:leading-[6rem] xl:text-[5.5rem] xl:leading-[7rem]'>Start building with our APIs for absolutely free.</h1>
+        {/* form */}
+        <div className='flex flex-col items-center gap-4 m-4 lg:flex-row lg:gap-0 lg:bg-white lg:shadow-none rounded-[2.4rem] overflow-hidden lg:w-[44rem] w-full'>
+          <input type="email" name="email" placeholder='Enter email address' className="py-6 px-11 lg:bg-transparent bg-ghost-white lg:w-[59%] border-none outline-none text-[1.25rem] placeholder:text-[1.35rem] w-full lg:rounded-[0] rounded-[2.4rem] shadow-lg"/>
+            <Link href='#' className="py-6 px-11 bg-pink-600 rounded-[2.4rem] lg:block text-[1.35rem] text-white leading-normal font-[700] hover:bg-pink-400 transition-all duration-300  text-center shadow-lg w-full lg:w-[41%]">
+            Schedule A Demo
+            </Link>
+          
+        </div>
+        {/* contact us */}
+         <p className="text-police-blue text-[1.5rem] leading-normal">
                 Have any questions?
-                <a href="/contact" className="font-700 underline">Contact Us</a>
-              </p>
-        </div>  
-        </section>
-         <Image
-            src="assets/shared/desktop/bg-pattern-circle.svg"
-            alt="circle"
-            className="absolute -top-80 -right-20 xxlg:-right-48 xlg:-right-96 lag:-top-45rem lag:right-48 mlag:right-24 slag:right-0 slag:-top-52rem mid:-top-40rem sma:-top-30rem xsma:-top-80 -z-1"
-          />
+          <Link href="/contact" className="font-[700] underline">Contact Us</Link>
+        </p>
+       </div>
+         {/* phone mockup */}
+       <div className='relative'>
+        <Image src={phoneMockup} alt="phone mockup" className='z-1 lg:scale-[0.9] md:scale-[0.8] scale-[0.7]'/>
+       </div>
     </div>
   )
 }
