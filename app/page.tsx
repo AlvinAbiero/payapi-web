@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import Proof from "./components/Proof";
 import Image from 'next/image'
 import bgCircle from '@/public/shared/desktop/bg-pattern-circle.svg'
+import Product from "./components/Product";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       </header>
       <main>
         <Proof/>
+        <Product/>
       </main>
       <Footer/>
     </div>
