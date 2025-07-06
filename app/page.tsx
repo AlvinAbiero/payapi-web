@@ -8,8 +8,8 @@ import Product from "./components/Product";
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
-      <header className='relative pt-4 md:pt-8 overflow-hidden'>
+    <div className="min-h-screen relative">
+      <header className='pt-4 md:pt-8 overflow-hidden'>
        <Navbar/>
        <Hero/>
         <Image
