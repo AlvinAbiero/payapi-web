@@ -7,7 +7,7 @@ import bgCircle from '@/public/shared/desktop/bg-pattern-circle.svg'
 
 const AboutPage = () => {
   return (
-    <div className="min-h-screen font-sans overflow-x-hidden font-sans font-[400] relative">
+    <div className="min-h-screen font-sans overflow-x-hidden  font-[400] relative">
           <header className='pt-4 md:pt-8 overflow-hidden'>
            <Navbar/> 
            <Image
