@@ -5,7 +5,7 @@ import Cta from './Cta'
 
 const Pricing = () => {
   return (
-    <section className='max-w-176 md:max-w-full lg:px-24 md:px-16 px-8 flex flex-col md:gap-32 gap-16 py-24'>
+    <section className='max-w-176 md:max-w-full w-full lg:px-24 md:px-16 px-8 flex flex-col md:gap-32 gap-16 py-24'>
       <h2 className='text-police-blue font-serif lg:text-[5.6rem] lg:leading-[5.6rem] text-[4.25rem] leading-[4.25rem]  text-center md:text-left'>Pricing</h2>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-20">
           <div className="flex flex-col gap-3">
@@ -117,7 +117,9 @@ const Pricing = () => {
             <Link href='#' className='border border-police-blue text-police-blue text-[1.5rem] font-[700] leading-normal rounded-[2.4rem] py-6 px-11 lg:self-start hover:bg-police-blue transition-all duration-300 hover:text-ghost-white mt-6 self-center mb-20 lg:mb-10'>Request Access</Link>
           </div>
       </div>
-      <Cta/>
+      <div className='w-full'>
+        <Cta/>
+      </div>  
     </section>
   )
 }
