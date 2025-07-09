@@ -1,3 +1,4 @@
+"use client"
 import iconCheck from '@/public/shared/desktop/icon-check.svg'
 import Image from 'next/image'
 import Link from 'next/link'

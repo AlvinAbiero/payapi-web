@@ -1,3 +1,4 @@
+"use client"
 import tesla from '@/public/shared/desktop/tesla.svg'
 import hp from '@/public/shared/desktop/hewlett-packard.svg'
 import microsoft from '@/public/shared/desktop/microsoft.svg'

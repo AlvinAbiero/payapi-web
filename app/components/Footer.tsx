@@ -1,3 +1,4 @@
+"use client"
 import Link from "next/link";
 
 import facebook from "../../public/shared/desktop/facebook.svg";

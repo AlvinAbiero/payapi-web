@@ -1,3 +1,4 @@
+"use client"
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -6,9 +7,9 @@ import phoneMockup from '@/public/home/desktop/illustration-phone-mockup.svg'
 
 const Hero = () => {
   return (
-    <div className='flex flex-col-reverse px-8 pb-16 items-center max-w-176 lg:min-w-full mx-auto  lg:grid lg:grid-cols-2 lg:justify-items-center'>
+    <div className='flex flex-col-reverse px-8 pb-16 items-center  max-w-176 lg:min-w-full mx-auto  lg:grid lg:grid-cols-2 lg:justify-items-center relative -top-20'>
        {/* CTA */}
-       <div className='text-center lg:text-left px-8'>
+       <div className='text-center lg:text-left px-8 lg:mt-0 -mt-24'>
         <h1 className='text-police-blue text-center lg:text-left font-[500] font-serif text-[2.85rem] leading-[3.5rem] md:text-[3.75rem] md:leading-[5rem]  lg:text-[5.75rem] lg:leading-[6rem] xl:text-[6.5rem] xl:leading-[7rem]'>Start building with our APIs for absolutely free.</h1>
         {/* form */}
         <div className='flex flex-col items-center gap-4 m-4 lg:flex-row lg:gap-0 lg:bg-white lg:shadow-none rounded-[2.8rem] overflow-hidden lg:w-[44rem] w-full lg:pr-2'>
@@ -25,9 +26,7 @@ const Hero = () => {
         </p>
        </div>
          {/* phone mockup */}
-       <div className=''>
-        <Image src={phoneMockup} alt="phone mockup" className='z-1 lg:scale-[1] md:scale-[0.8] scale-[0.8]'/>
-       </div>
+        <Image src={phoneMockup} alt="phone mockup" className=' lg:scale-[1] md:scale-[0.8] scale-70 lg:mt-0 lg:ml-0 -mt-24 ml-10'/>
     </div>
   )
 }

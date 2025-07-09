@@ -1,9 +1,14 @@
+
 import React from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Image from 'next/image'
 import bgCircle from '@/public/shared/desktop/bg-pattern-circle.svg'
 import Contact from '../components/Contact'
+
+export const metadata = {
+  title: 'Contact / PayApi'
+}
 
 const ContactPage = () => {
   return (

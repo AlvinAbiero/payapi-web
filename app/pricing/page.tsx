@@ -1,8 +1,13 @@
+
 import Pricing from "../components/Pricing"
 import Image from "next/image"
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import bgCircle from '@/public/shared/desktop/bg-pattern-circle.svg'
+
+export const metadata = {
+  title: 'Pricing / PayApi'
+}
 
 const PricingPage = () => {
   return (

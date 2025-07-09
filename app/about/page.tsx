@@ -5,6 +5,9 @@ import About from '../components/About'
 import Image from 'next/image'
 import bgCircle from '@/public/shared/desktop/bg-pattern-circle.svg'
 
+export const metadata = {
+  title: 'About / PayApi'
+}
 const AboutPage = () => {
   return (
     <div className="min-h-screen font-sans overflow-x-hidden  font-[400] relative">

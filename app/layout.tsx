@@ -40,7 +40,7 @@ export default function RootLayout({
         className={`${publicSans.variable} ${dmSerif.variable}  antialiased bg-flash-white`}
       >
        
-        <main className="mx-auto min-h-screen overflow-hidden font-sans font-[400]">
+        <main className="mx-auto overflow-hidden font-sans font-[400]">
           {children}
         </main>
        

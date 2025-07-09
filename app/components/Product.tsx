@@ -1,3 +1,4 @@
+"use client"
 import implement from '@/public/home/desktop/illustration-easy-to-implement.svg'
 import simple from '@/public/home/desktop/illustration-simple-ui.svg'
 import finances from '@/public/home/desktop/icon-personal-finances.svg'
